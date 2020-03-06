@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8"/>
+        <meta name=author content="Sai Rohith Gorla"/>
+
+        <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
+        <!-- Material Design for Bootstrap fonts and icons -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+      <div class="container mx-auto">
+        <div class="text-center">
+            <h2>Roman Numerals Encoder</h3>
+        </div>
+        <form id="convertForm">
+            <h4>Convert Number to Roman Numeral</h4>
+            <div class="d-flex space-between-flex py-1">
+                <div class="w-25">
+                  <label>Number</label>
+                  <input id="num1" type="number" placeholder=" ">
+                  <button class="close-icon" id="resetNumber"></button>
+                </div>
+                <div class="w-40 roman-num-box">
+                  <label>Roman Numeral</label>
+                  <div id="roman-num1"></div>
+                </div>
+                <div class="w-15 text-center vertical-bottom">
+                  <button id="convertToRoman">Convert</button>    
+                </div>
+                <div class="w-100" id="error1">Number field is empty or invalid</div>
+            </div>
+            <br>
+            <h4>Convert Roman Numeral to Number</h4>
+            <div class="d-flex space-between-flex py-1">
+                <div class="w-40">
+                  <label>Roman Numeral</label>
+                  <input id="roman-num2" type="text" placeholder=" ">
+                  <button class="close-icon" id="resetRoman"></button>
+                </div>
+                <div class="w-25 roman-num-box">
+                  <label>Number</label>
+                  <div id="num2"></div>
+                </div>
+                <div class="w-15 text-center vertical-bottom">
+                    <button id="convertToNumber">Convert</button>    
+                </div>
+                <div class="w-100" id="error2">Roman Numeral field is empty or invalid</div>
+            </div>
+            <br>
+        </form>
+    </div>
+
+      
+        <footer>
+            <div id="footer">
+              <p>&copy; 2020 Sai Rohith , all rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+        <script src="index.js"></script>
+        <script src="index1.js"></script>
+    </body>
+    <div class="navbar">
+      P3 Client-Side App
+      <a href="index.html" rel="noopener">Home</a>
+      <a href="interaction.html" rel="noopener">Interaction</a>
+      <a href="about.html" rel="noopener">Contact</a>
+      <a href="test/qunit.html" rel="noopener">QUnit</a>
+    </div>
+</html>
